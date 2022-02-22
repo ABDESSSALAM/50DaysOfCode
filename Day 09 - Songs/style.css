@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #da70d6;
+}
+
+.btn{
+  background-color: #663399;
+  color: #fff;
+  font-size: 1.2em;
+  border: 0;
+  padding: 1.2em 3em;
+  margin: 1.3em 2em;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.9;
+}

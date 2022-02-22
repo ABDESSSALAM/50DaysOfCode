@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #6a5acd;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container{
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px 40px;
+  border-radius: 7px;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container a{
+  text-decoration: none;
+  color: #add8ed;
+}
+form .btn{
+  display:block;
+  background-color: #add8ed;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn:active{
+  transform: scale(0.98);
+}
+form .text{
+  margin-top: 30px;
+}
+.form-controler{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-controler input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color:#fff;
+
+}
+input:focus,input:valid{
+  outline: none;
+  border-bottom-color: #add8ed;
+}
+.form-controler label{
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.form-controler label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-controler input:focus + label span,
+.form-controler input:valid + label span{
+  color: #add8ed;
+  transform: translateY(-30px);
+
+}
